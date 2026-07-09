@@ -5,7 +5,7 @@ pipeline {
         PORT = "3000"
     }
 
-    Stages {
+    stages {
         stage("Clone REPO"){
             steps{
                 echo 'CLoaning the REPO'
