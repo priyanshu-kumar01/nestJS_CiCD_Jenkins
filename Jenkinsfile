@@ -1,4 +1,7 @@
 pipeline {
+
+    agent any
+
     enviornment {
         IMAGE_NAME = "nestjs-image"
         EMAIL = "priyanshukumar7979@gmail.com"
