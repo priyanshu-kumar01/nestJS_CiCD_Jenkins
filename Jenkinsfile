@@ -1,8 +1,8 @@
 pipeline {
 
     agent any
-
-    environment {
+    
+    environment  {
         IMAGE_NAME = "nestjs-image"
         EMAIL = "priyanshukumar7979@gmail.com"
         PORT = "3000"
@@ -42,7 +42,7 @@ pipeline {
 
         stage("Send Email Notification") {
             steps {
-                emailtext(
+                emailext(
                     subject: "NESTJS APP DEPLOYED SUCCESSFULLY IN EC2!",
                     body: "Nestjs app deployed in http://52.90.218.158:${PORT}/",
                     to: "${EMAIL}"
