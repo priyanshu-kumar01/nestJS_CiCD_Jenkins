@@ -3,8 +3,8 @@ pipeline {
     agent any
 
     enviornment {
-        IMAGE_NAME = "nestjs-image"
-        EMAIL = "priyanshukumar7979@gmail.com"
+        IMAGE_NAME = "nestjs-image",
+        EMAIL = "priyanshukumar7979@gmail.com",
         PORT = "3000"
     }
 
